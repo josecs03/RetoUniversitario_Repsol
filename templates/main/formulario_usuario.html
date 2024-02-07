@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="form_container">
+        <form action="/usuario-form" method="post">
+
+            <input type="hidden" name="input_municipio" id="input_municipio" value="{{ result[0] }}">
+            <input type="hidden" name="input_provincia" id="input_provincia" value="{{ result[1] }}">
+            
+            <div>
+                <label for="label_tipo_hogar">Tipo de hogar:</label>
+                <select id="input_tipo_hogar" name="input_tipo_hogar">
+                <option value="" disabled selected >Elige una opción</option>
+                <option value="1">Piso (atico, bajo, estudio...)</option>
+                <option value="2">Chalet adosado</option>
+                <option value="3">Casa independiente</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="label_altura_hogar">Altura de hogar:</label>
+                <select id="input_altura_hogar" name="input_altura_hogar">
+                <option value="0" disabled selected>Elige una opción</option>
+                <option value="1" >Planta baja o inferior</option>
+                <option value="2">Planta primera a tercera</option>
+                <option value="3">Superior a planta tercera</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="label_jardin">¿Tienes jardin en tu hogar?:</label>
+                <select id="input_jardin" name="input_jardin">
+                <option value="0" disabled selected>Elige una opción</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="label_balcon">¿Tienes balcón?:</label>
+                <select id="input_balcon" name="input_balcon">
+                <option value="0" disabled selected>Elige una opción</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="label_consumo">¿Cuál es su consumo enérgetico mensual habitual (kW/h)?:</label>
+                <input type="number" id="input_consumo" name="input_consumo" required>
+            </div>
+
+
+            <div>
+                <label for="label_mantenimiento">¿Qué tipo de sistema prefiere?:</label>
+                <select id="input_mantenimiento" name="input_mantenimiento">
+                <option value="0" disabled selected>Elige una opción</option>
+                <option value="1">Bajo mantenimiento</option>
+                <option value="2">Alto mantenimiento</option>
+                <option value="3">Indiferente</option>
+                </select>
+            </div>
+
+            <button type="submit">Aceptar</button>
+        </form>
+    </div>
+{% endblock %}

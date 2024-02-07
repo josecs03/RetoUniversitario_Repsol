@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- nuestra lista tiene una len de 9, siendo el orden:
+        0. Muro trombe
+        1. Cocina solar
+        2. Invernadero 
+        3. Sistema de recogida de agua de lluvia
+        4. Ventanas solares
+        5. Aerogeneradores 
+        6. Paredes o techos verdes
+        7. Celulas fotovoltaicas (paneles solares)
+        8. Energía solar térmica (calentar agua)
+    -->
+
+    {% if result[0] == 1 %} <!-- Los muros trombes viable-->
+        <div class="respuestas_expuestas"> 
+
+            <h2>Muros trombe</h2>
+            <img src="static/muro_trombe.jpg">
+            <p>
+                El muro trombe es un tipo de fachada diseñada para aprovechar la radiación solar con el fin de calefactar las estancias. 
+                En términos de arquitectura bioclimática se considera una estrategia pasiva de calentamiento indirecto.
+                básicamente consiste en un muro orientado a sur con una hoja exterior de vidrio a cierta distancia, 
+                creando una cámara de aire que aprovecha el efecto invernadero para aumentar la temperatura acumulada en el muro. 
+            </p>
+
+        </div> 
+    {% endif %}
+
+    {% if result[1] == 1 %}  <!-- Cocinas solar viable-->
+        <div class="respuestas_expuestas"> 
+
+            <h2>Cocinas solares</h2>
+            <img src="static/cocina_solar.jpg">
+            <p>
+                Las cocinas u ollas solares son dispositivos que permiten cocinar alimentos usando la radiación solar como fuente de energía. 
+                Son otra alternativa para la cocción rural y aunque no cubren por completo la necesidad de cocción de alimentos, 
+                por ejemplo hacer tortillas, ni cocinar en días nublados, su uso representa un ahorro en el consumo de leña. 
+            </p>
+
+        </div>
+    {% endif %}
+
+    {% if result[2] == 1 %}  <!-- Invernadero viable-->
+        <div class="respuestas_expuestas"> 
+
+            <h2>Invernadero</h2>
+            <img src="static/invernadero.jpg">
+            <p>
+                Un invernadero es una estructura cerrada, cubierta por materiales transparentes. 
+                Su estructura está formada por una cubierta exterior translúcida, normalmente de plástico o cristal, 
+                que permite el paso de los rayos de sol a su interior. En él es posible crear, de forma artificial, 
+                las condiciones ideales para el correcto desarrollo de nuestro cultivo.
+                Además, en un invernadero es posible controlar diversos factores como la temperatura, la humedad y otros factores importantes 
+                que influyen directamente en el crecimiento de las plantas y sus frutos.
+            </p>
+
+        </div>
+    {% endif %}
+
+    {% if result[3] == 1 %}  <!-- Sistema de recogida de agua de lluvia viable-->
+        <div class="respuestas_expuestas"> 
+
+            <h2>Sistema de recogida de agua de lluvia</h2>
+            <img src="static/recogida_lluvial.jpg">
+            <p>
+                Los sistemas de recolección de agua lluvia son una alternativa para enfrentar el desabastecimiento del recurso en zonas veredales 
+                o con deficiente acceso al mismo Objetivo. Estos pueden tener un tanque debajo de la vivienda o a su lado donde se almacena e inclusive
+                procesa el agua obtenida de la lluvia.
+            </p>
+
+        </div>
+    {% endif %}
+
+    {% if result[4] == 1 %}  <!-- Ventanas solares viable-->
+        <div class="respuestas_expuestas"> 
+
+            <h2>Ventanas solares</h2>
+            <img src="static/ventanas_solares.jpg">
+            <p>
+                Las ventanas solares tambien conocidas como ventanas fotovoltaicas son capaces de absorber la luz solar y transformarla en energía. 
+                Se trata de paneles solares mucho más finos de lo normal, flexibles y transparentes. 
+                Unas propiedades que hacen que este material pueda ser fácilmente adaptado a muchas superficies como, por ejemplo, 
+                las superficies verticales de los edificios. Aunque las ventanas solares todavía son muy caras y están en
+                proceso de desarrollo, puede que, en unos años, se conviertan en una de las opciones integradas dentro del autoconsumo fotovoltaico.
+
+            </p>
+
+        </div>
+    {% endif %}
+
+    {% if result[5] == 1 %}  <!-- Aerogeneradores viable-->
+        <div class="respuestas_expuestas"> 
+
+            <h2>Aerogeneradores</h2>
+            <img src="static/aerogenerador.jpg" alt="Descripción de la imagen">
+            <p>
+                Los aerogeneradores domésticos son una alternativa sostenible y económica para la generación de energía eléctrica en pequeña escala, 
+                ideal si tu vivienda está en aislada. Con el creciente interés hoy en dia de las fuentes de energía renovable, 
+            </p>
+
+        </div>
+    {% endif %}
+
+    {% if result[6] == 1 %}  <!-- Paredes o techos verdes viable-->
+        <div class="respuestas_expuestas">
+
+            <h2>Paredes y techos verdes</h2>
+            <img src="static/pared_verde.jpg" alt="Descripción de la imagen">
+            <p>
+                Un techo verde, azotea verde o cubierta ajardinada es el techo de un edificio que está parcial o 
+                totalmente cubierto de vegetación, ya sea en suelo o en un medio de cultivo apropiado.  Una cubierta vegetal bien 
+                planteada representa una planificación urbana sostenible con multitud de beneficios, tanto para el edificio como 
+                en el entorno urbano.
+            </p>
+
+        </div>
+    {% endif %}
+
+    {% if result[7] == 1 %}  <!-- Celulas fotovoltaicas viable-->
+        <div class="respuestas_expuestas"> 
+
+            <h2>Celulas fotovoltaicas</h2>
+            <img src="static/celula_fotovoltaica.jpg" alt="Descripción de la imagen">
+            <p>
+                La energía solar, o fotovoltaica, es una de las fuentes renovables más eficientes en la actualidad y 
+                será clave en el proceso de descarbonización del planeta. Y todo gracias a una pieza imprescindible: 
+                la célula fotovoltaica. Este dispositivo electrónico tiene la capacidad de captar y transformar la energía 
+                lumínica en electricidad, y en los últimos años no ha dejado de evolucionar en cuanto a materiales y técnicas
+                de fabricación.
+            </p>
+
+        </div>
+    {% endif %}
+
+    {% if result[8] == 1 %}  <!--Energía solar térmica viable-->
+        <div class="respuestas_expuestas"> 
+
+            <h2>Energía solar térmica</h2>
+            <img src="static/energia_solar_termica.jpg" alt="Descripción de la imagen">
+            <p>
+                La energía solar térmica o energía termosolar consiste en el aprovechamiento de la energía del Sol para 
+                producir calor que puede aprovecharse para cocinar alimentos o para la producción de agua caliente destinada al 
+                consumo de agua doméstico, ya sea agua caliente sanitaria, calefacción o para producción de energía mecánica y, a 
+                partir de ella, de energía eléctrica. 
+            </p>
+
+        </div>
+    {% endif %}
+
+{% endblock %}

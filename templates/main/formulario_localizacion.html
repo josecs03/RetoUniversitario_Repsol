@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="form_container">
+        <form action="/localizacion-form" method="post">
+            <div>
+                <label for="label_municipio">Municipio:</label>
+                <input type="text" id="input_municipio" name="input_municipio" required> 
+            </div>
+            
+            <div>
+                <label for="label_provincia">Provincia:</label>
+                <input type="text" id="input_provincia" name="input_provincia" required> 
+            </div>
+
+            <button type="submit">Aceptar</button>
+        </form>
+    </div>
+{% endblock %}

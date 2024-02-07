@@ -1,0 +1,145 @@
+/* Aplicar estilos al cuerpo */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fondoweb.jpg');
+    background-size: cover; /* Redimensionar la imagen de fondo para cubrir toda la ventana */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fijar la imagen de fondo */
+}
+
+/* Estilos de la barra de título */
+
+.title-bar {
+    background: #43c3d1; /* Verde claro */
+    height: 80px;
+    position: fixed;
+    margin-top: 0; /* Eliminar margen superior */
+    padding: 10px; /* Opcional: Agregar relleno para mejor espaciado */
+    top: 0; /* Posicionar en la parte superior de la ventana */
+    width: 100%; /* Hacer que la barra de título abarque toda la anchura */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.title-bar h1 {
+    color: #fff; /* Cambiar el color del texto a blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+    /* Tus estilos existentes */
+    color: black;
+    text-align: center;
+}
+
+/* Estilos para los elementos con clase 'respuestas_expuestas' */
+
+.respuestas_expuestas {
+    height: 50%;
+    width: 50%; /* Ancho del div, ajustar el porcentaje según prefieras */
+    margin: 0 auto 20px auto; /* Centrar horizontalmente y agregar margen inferior */
+    background-color: #43c3d1; /* Fondo verde claro */
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 20px; /* Espacio interno */
+}
+
+.respuestas_expuestas h2 {
+    color: #000000; /* Color del texto */
+    text-align: center;
+}
+
+.respuestas_expuestas p {
+    color: #000000; /* Color del texto */
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.respuestas_expuestas img {
+    display: block;
+    margin: auto;
+    width: 600px; /* Ancho deseado para las imágenes */
+    height: 300px; /* Altura automática para mantener la proporción */
+    object-fit: cover;
+}
+
+/* Estilos para el formulario */
+
+form {
+    align-items: center;
+    justify-content: center;
+    background-color: #43c3d1; /* Fondo verde claro */
+    max-width: 400px;
+    margin: auto;
+    margin-top: 30;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos para los contenedores de formularios */
+
+.form_container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #43c3d1; /* Fondo verde claro */
+}
+
+/* Aplicar estilos a las etiquetas del formulario */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+/* Aplicar estilos a los campos de entrada del formulario */
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para el botón de envío del formulario */
+
+button {
+    background-color: #235ed2;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 150px; /* Centrar el botón horizontalmente */
+    display: block;
+}
+
+/* Efecto de hover para el botón de envío */
+
+button:hover {
+    background-color: #2b09b3;
+}
+
+/* Estilos para el contenido */
+
+.content {
+    margin-top: 135px;
+}
+
+.content h2 {
+    color: black;
+    text-align: center;
+}

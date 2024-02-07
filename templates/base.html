@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    </head>
+
+    <body>
+        <header>
+            <div class="title-bar">
+                <h1>Challenge universitario REPSOL</h1>
+            </div>
+        </header>
+
+        <div class="content"> 
+            <h2>La IA trae la energía renovable a la puerta de tu casa</h2>
+            <div>{% block content %}{% endblock %}</div>
+        </div>
+    </body>
+</html>
